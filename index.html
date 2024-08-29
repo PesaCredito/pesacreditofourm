@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PesaCredito Web3 Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/pesacredito-logo.png" alt="PesaCredito Logo">
+        <button id="login-button">Login with Phantom</button>
+    </header>
+
+    <!-- Blog Post Creation Form (Visible only to admin) -->
+    <section id="blog-creation-form" style="display: none;">
+        <h2>Create a Blog Post</h2>
+        <form id="blog-form">
+            <input type="text" id="blog-title" placeholder="Blog Post Title" required>
+            <textarea id="blog-summary" placeholder="Blog Post Summary" required></textarea>
+            <input type="file" id="blog-image" accept="image/*" required>
+            <button type="submit">Create Blog Post</button>
+        </form>
+    </section>
+
+    <section id="admin-posts">
+        <h2>PesaCredito Admin Posts</h2>
+        <!-- Admin posts will be injected here -->
+    </section>
+
+    <section id="forum">
+        <h2>Create a Post</h2>
+        <div id="post-form">
+            <textarea id="new-post-content" placeholder="What's on your mind?"></textarea>
+            <button id="post-button">Post</button>
+        </div>
+    </section>
+
+    <section id="feed">
+        <h2>Forum Feed</h2>
+        <div id="posts-container">
+            <!-- User posts will be injected here -->
+        </div>
+    </section>
+
+    <script src="assets/phantom.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
