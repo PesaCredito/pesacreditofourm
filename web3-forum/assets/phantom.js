@@ -1,0 +1,1 @@
+// Phantom Wallet JavaScript SDK (Placeholder)
